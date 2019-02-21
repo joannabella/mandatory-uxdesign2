@@ -2,7 +2,6 @@ body {
   font-family: 'Roboto', sans-serif;
   overflow-y: hidden;
   color: #333;
-  /*background-image: linear-gradient(to right, #334, #333);*/
   background-image: url(https://www.oxygenna.com/wp-content/uploads/2015/11/18.jpg);
 }
 
@@ -190,9 +189,7 @@ body {
   width: 320px;
   height: 524px;
   overflow: scroll;
-  /* padding-left: 21px; */
   font-size: 16px;
-  /* padding-right: 18px; */
   margin: 20px;
   margin-top: 0;
 }
