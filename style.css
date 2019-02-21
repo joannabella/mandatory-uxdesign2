@@ -1,0 +1,320 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-y: hidden;
+  color: #333;
+  /*background-image: linear-gradient(to right, #334, #333);*/
+  background-image: url(https://www.oxygenna.com/wp-content/uploads/2015/11/18.jpg);
+}
+
+.container {
+  max-width: 360px;
+  margin: 0 auto;
+  position: relative;
+  height: 600px;
+  border-radius: 7px;
+  box-shadow: 0px 3px 60px 1px #502424;
+  margin-top: 45px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.top-bar {
+  background: #05373e;
+  font-size: 18px;
+  position: relative;
+  color: #fff;
+  height: 56px;
+  margin-top: 18px;
+  box-shadow: 0px -20px 0px 0px #04252b;
+}
+
+.top-bar__left {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+
+.top-bar__right {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+.top-bar__left__title {
+  position: relative;
+  bottom: 9px;
+}
+
+.top-bar__left__icon {
+  color: #fff;
+  height: 24px;
+  padding-right: 32px;
+}
+
+.top-bar__right__icon {
+  color: #fff;
+  height: 24px;
+  margin-left: 24px;
+}
+
+.top-bar__last__icon {
+  color: #fff;
+  height: 24px;
+  margin-left: 16px;
+}
+
+.material-icons {
+  font-size: 30px;
+  line-height: 27px;
+}
+
+.navbar {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  background: white;
+  flex-direction: column;
+  border-bottom-left-radius: 7px;
+  top: 19px;
+  text-align: center;
+  box-shadow: 8px 5px 51px -2px rgba(78, 78, 78, 0);
+  transition: .4s ease;
+  opacity: 1;
+  z-index: 100;
+  left: -300px;
+}
+
+.navbar.expanded {
+  box-shadow: 8px 5px 51px -2px rgba(78, 78, 78, 1);
+  left: 0px;
+}
+
+.navbar-toggler {
+  position: relative;
+  left: -95px;
+  top: 15px;
+  opacity: 0.01;
+  cursor: pointer;
+}
+
+.navbar__left__icon {
+  position: relative;
+  left: -108px;
+  top: 15px;
+  color: black;
+}
+
+.navbar > label {
+  position: absolute;
+  left: 14px;
+  top: 85px;
+  font-size: 20px;
+}
+
+.navbar-list {
+  position: relative;
+  top: 145px;
+  text-align: left;
+}
+
+.navbar-list > li {
+  margin-bottom: 15px;
+}
+
+.navbar-list > li > a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  height: 35px;
+  width: 278px;
+  position: relative;
+  padding-top: 17px;
+  padding-left: 27px;
+  left: -20px;
+}
+
+.navbar-list > li > a:hover {
+  background-color: #e2e2e2;
+}
+
+.navbar-subtitle {
+  position: absolute;
+  top: 100px;
+  left: -130px;
+  font-size: 16px;
+  border-bottom: 1px solid black;
+  padding-bottom: 35px;
+  width: 430px;
+}
+
+.navbar.expanded + .navbar-overlay {
+  background-color: #00000069;
+  position: absolute;
+  left: 0px;
+  top: 74px;
+  height: 526px;
+  width: 360px;
+  z-index: 90;
+}
+
+.start-button-container {
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+
+.start-button {
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(to right, #ff9800, #FF4886);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: .2s ease;
+}
+
+.start-button:hover {
+  background-image: linear-gradient(to right, #ff4886, #FF9800);
+  transform: translateY(-10%);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.question-page {
+  width: 320px;
+  height: 524px;
+  overflow: scroll;
+  /* padding-left: 21px; */
+  font-size: 16px;
+  /* padding-right: 18px; */
+  margin: 20px;
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 15px;
+}
+
+label {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.submit-button-container {
+  text-align: center;
+}
+
+.submit-button {
+  background-image: linear-gradient(to right, #ff9800, #FF4886);
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  color: #fff;
+  width: 80px;
+  height: 25px;
+  position: relative;
+  bottom: 10px;
+  border-radius: 35px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  transition: .2s ease;
+}
+
+.submit-button:hover {
+  background-image: linear-gradient(to right, #ff4886, #FF9800);
+  transform: translateY(-5%);
+}
+
+.modal-dialog {
+  position: absolute;
+  left: 0;
+  top: 74px;
+  z-index: 10;
+}
+
+.modal-dialog-background {
+  display: none;
+  position: relative;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  bottom: 0;
+  height: 526px;
+  width: 360px;
+  background-color: #00000069;
+  margin: 0 auto;
+}
+
+.modal-dialog-window {
+  box-shadow: 0px 3px 60px 1px #4e4e4e;
+  width: 260px;
+  height: 180px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 0 auto;
+  position: relative;
+  top: 125px;
+}
+
+#modal-dialog-message, #modal-dialog-title {
+  margin-left: 22px;
+  padding-top: 20px;
+  margin-bottom: 0;
+  margin-top: 0px;
+}
+
+.restart-button, .close-dialog-button {
+  position: relative;
+  bottom: -45px;
+  left: 40px;
+  margin-left: 20px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  color: #000;
+  width: 80px;
+  height: 25px;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  font-weight: bolder;
+  transition: .2s ease;
+}
+
+.restart-button:hover {
+  transform: translateY(-8%);
+}
+
+.close-dialog-button:hover {
+  transform: translateY(-8%);
+}
+
+.about-page {
+  position: relative;
+  top: 0px;
+  width: 300px;
+  margin: 0 auto;
+  line-height: 30px;
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}
+
+.stats-page {
+  position: relative;
+  top: 0px;
+  left: 20px;
+}
+
+.stats-title {
+  margin-bottom: 20px;
+}
